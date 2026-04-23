@@ -1,12 +1,11 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const members = [
-  { name: "Aarav Sharma", role: "Team Lead · Simulation", initials: "AS", color: "from-emerald-500 to-cyan-500" },
-  { name: "Diya Patel", role: "Frontend & UX", initials: "DP", color: "from-cyan-500 to-blue-500" },
-  { name: "Rohan Iyer", role: "Data & Sensors", initials: "RI", color: "from-amber-500 to-orange-500" },
-  { name: "Meera Nair", role: "ML & Forecasting", initials: "MN", color: "from-fuchsia-500 to-pink-500" },
-  { name: "Karthik Raj", role: "Backend & APIs", initials: "KR", color: "from-violet-500 to-purple-500" },
-  { name: "Ananya Gupta", role: "Research & Pitch", initials: "AG", color: "from-rose-500 to-red-500" },
+  { name: "Adarsh ", role: "Team Lead · Simulation", initials: "AS", color: "from-emerald-500 to-cyan-500" },
+  { name: "Rangegowda", role: "Frontend & UX", initials: "P", color: "from-cyan-500 to-blue-500" },
+  { name: "Anil kumar", role: "Data & Sensors", initials: "P", color: "from-amber-500 to-orange-500" },
+  { name: "Ningappa", role: "ML & Forecasting", initials: "S K", color: "from-fuchsia-500 to-pink-500" },
+  { name: "Pavan", role: "Backend & APIs", initials: "B", color: "from-violet-500 to-purple-500" }
 ];
 
 const Team = () => (
