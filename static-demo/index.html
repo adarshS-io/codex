@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CarbonTwin · Bangalore Digital Twin (Static Demo)</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>🌱 CarbonTwin <span>· Bangalore</span></h1>
+  <div class="weather">
+    <span id="temp">27°C</span> · <span id="hum">Humidity 64%</span> ·
+    <span id="aqi" class="badge">AQI 142</span>
+  </div>
+</header>
+
+<main class="grid">
+  <section class="card map-card">
+    <h2>City Map · CO₂ Hotspots</h2>
+    <svg id="map" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+    <p class="hint">Click a hotspot for details. Larger halo = higher emissions.</p>
+  </section>
+
+  <section class="card">
+    <h2>Interventions</h2>
+    <div class="slider"><label>Roadside Capture <output id="o1">0</output>%</label>
+      <input type="range" id="roadsideCapture" min="0" max="100" value="0"></div>
+    <div class="slider"><label>Vertical Gardens <output id="o2">0</output>%</label>
+      <input type="range" id="verticalGardens" min="0" max="100" value="0"></div>
+    <div class="slider"><label>Industrial Biofilters <output id="o3">0</output>%</label>
+      <input type="range" id="biofilters" min="0" max="100" value="0"></div>
+    <div class="slider"><label>EV Adoption <output id="o4">0</output>%</label>
+      <input type="range" id="evAdoption" min="0" max="100" value="0"></div>
+
+    <div class="kpis">
+      <div><span>Base CO₂</span><strong id="base">— t/day</strong></div>
+      <div><span>After Capture</span><strong id="eff">— t/day</strong></div>
+      <div class="saved"><span>Saved</span><strong id="saved">— t/day</strong></div>
+    </div>
+  </section>
+
+  <section class="card chart-card">
+    <h2>Per-Zone Reduction</h2>
+    <div id="bars" class="bars"></div>
+  </section>
+</main>
+
+<footer>Hackathon prototype · Vanilla HTML + CSS + JavaScript</footer>
+<script src="app.js"></script>
+</body>
+</html>
